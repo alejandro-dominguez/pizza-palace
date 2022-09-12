@@ -175,11 +175,10 @@
     background-color: $darker-gray;
     color: $white;
     border: 0.25rem solid $gray;
-    box-shadow: 0.4rem 0.4rem $black;
+    box-shadow: 0.4rem 0.4rem $gray;
 
     &:hover{
-        background-color: $dark-gray;
-        box-shadow: 0.2rem 0.2rem $black;
-        border: 0.25rem solid $darker-gray;
+        background-color: $darkest-gray;
+        box-shadow: 0.2rem 0.2rem $gray;
     }
 }

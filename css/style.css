@@ -180,11 +180,10 @@ p {
   background-color: #495556;
   color: #fff;
   border: 0.25rem solid #99b2b5;
-  box-shadow: 0.4rem 0.4rem #191919; }
+  box-shadow: 0.4rem 0.4rem #99b2b5; }
   .navigation-link.dark:hover {
-    background-color: #69797a;
-    box-shadow: 0.2rem 0.2rem #191919;
-    border: 0.25rem solid #495556; }
+    background-color: #242929;
+    box-shadow: 0.2rem 0.2rem #99b2b5; }
 
 .about {
   display: flex;
@@ -631,11 +630,10 @@ p {
   background-color: #495556;
   color: #fff;
   border: 0.25rem solid #99b2b5;
-  box-shadow: 0.4rem 0.4rem #191919; }
+  box-shadow: 0.4rem 0.4rem #99b2b5; }
   .cart-link.dark:hover {
-    background-color: #69797a;
-    box-shadow: 0.2rem 0.2rem #191919;
-    border: 0.25rem solid #495556; }
+    background-color: #242929;
+    box-shadow: 0.2rem 0.2rem #99b2b5; }
 
 .offcanvas.dark {
   background: #495556; }
