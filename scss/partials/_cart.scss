@@ -1,0 +1,245 @@
+.cart-link{
+    background-color: $white;
+}
+
+.cart-link.buy{
+    background-color: $secondary-color-light;
+}
+
+.offcanvas{
+    background: $light-gray;
+}
+
+.cart-close{
+    position: absolute;
+    top: 5%;
+    right: 9%;
+    color: $main-color-dark;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.cart-title{
+    color: $secondary-color-light;
+    position: absolute;
+    top: 4.5%;
+    left: 8%;
+    font-family: $main-font-bold;
+    font-size: 2.75rem;
+    text-shadow: 0.2rem 0.2rem $darker-gray;
+    letter-spacing: 0.1rem;
+}
+
+.cart-total{
+    display: flex;
+    position: absolute;
+    bottom: 14%;
+    left: 8%;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid $secondary-color-light;
+
+    &-p{
+        font-family: $secondary-font-bold;
+        font-size: 1.25rem;
+    }
+
+    &-price{
+        font-family: $secondary-font;
+        font-size: 1.2rem;
+    }
+}
+
+.cart-check{
+    position: absolute;
+    bottom: 3%;
+    left: 8%;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    font-family: $main-font-bold;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    background-color: $main-color;
+    color: $white;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
+
+    &:hover, &:focus{
+        color: $white;
+        background-color: $dark-gray;
+    }
+}
+
+.cart-delete{
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $dark-gray;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
+
+    &:hover{
+        color: $main-color;
+    }
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    &-container{
+        background-color: $white;
+        height: 55%;
+        width: 85%;
+        position: absolute;
+        top: 13%;
+        left: 8%;
+        padding: 0.5rem;
+        overflow-y: auto;
+        border-radius: 1rem;
+        box-shadow: 0.2rem 0.2rem $main-color-dark;
+
+        &-p{
+            margin-top: 1rem;
+            font-family: $secondary-font;
+            font-size: 1.25rem;
+            text-align: center;
+            line-height: 1.75rem;
+        }
+    }
+
+    &-img{
+        display: block;
+        width: 20%;
+    }
+
+    &-title{
+        font-family: $main-font-bold;
+        font-size: 1.5rem;
+        padding: 0 0.2rem;
+        width: min-content;
+    }
+
+    &-controllers{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    
+    &-plus{
+        margin-top: 0.175rem;
+        cursor: pointer;
+        -webkit-transition: all 0.15s;
+        transition: all 0.15s;
+
+        &:hover{
+        color: $main-color;
+        }
+    }
+
+    &-amount{
+        font-family: $secondary-font;
+        font-size: 1rem;
+    }
+
+    
+    &-minus{
+        margin-top: 0.175rem;
+        cursor: pointer;
+        -webkit-transition: all 0.15s;
+        transition: all 0.15s;
+
+        &:hover{
+        color: $main-color;
+        }
+    }
+
+    &-total{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    &-price{
+        font-family: $secondary-font-bold;
+        font-size: 1rem;
+    }
+
+    &-delete{
+        font-size: 1rem;
+        cursor: pointer;
+        color: $dark-gray;
+        -webkit-transition: all 0.15s;
+        transition: all 0.15s;
+    
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+
+.title-swal{
+    font-family: $main-font-light;
+    line-height: 2.5rem;
+    padding: 0.25rem 3rem 1.5rem 3rem;
+    letter-spacing: 0.075rem;
+
+    &-products{
+        font-family: $main-font;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.cart-link.dark{
+    background-color: $darker-gray;
+    color: $white;
+    border: 0.25rem solid $gray;
+    box-shadow: 0.4rem 0.4rem $black;
+
+    &:hover{
+        background-color: $dark-gray;
+        box-shadow: 0.2rem 0.2rem $black;
+        border: 0.25rem solid $darker-gray;
+    }
+}
+
+.offcanvas.dark{
+    background: $darker-gray;
+}
+
+.cart-close.dark{
+    color: $light-gray;
+}
+
+.cart-title.dark{
+    text-shadow: 0.2rem 0.2rem $black;
+}
+
+.cart-delete.dark{
+    color: $gray;
+
+    &:hover{
+        color: $white;
+    }
+}
+
+.cart-container.dark{
+    background-color: $gray;
+    box-shadow: 0.2rem 0.2rem $main-color;
+}
+
+.cart-item-container.dark{
+    background-color: $gray;
+    box-shadow: 0.2rem 0.2rem $main-color;
+}
+
+.cart-item-delete.dark{
+    color: $gray;
+}

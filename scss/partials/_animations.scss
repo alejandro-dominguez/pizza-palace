@@ -1,0 +1,23 @@
+.fade-in-left{
+    opacity: 0;
+    transform: translateX(-50px);
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.fade-in-right{
+    opacity: 0;
+    transform: translateX(50px);
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.fade-in-left.appear{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.fade-in-right.appear{
+    opacity: 1;
+    transform: translateX(0px);
+}

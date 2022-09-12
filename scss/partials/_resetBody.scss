@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 133.828px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+body{
+    background-color: $light-gray;
+    color: $black;
+    font-family: $main-font;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+body.dark{
+    background-color: $darkest-gray;
+    color: $white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    line-height: normal;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+   margin: 0; 
+}

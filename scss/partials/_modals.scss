@@ -1,0 +1,93 @@
+.modal-header, .modal-footer{
+    border: none;
+}
+
+.modal-content{
+    background-color: transparent;
+    border: none;
+}
+
+.modal-dialog {
+    top: 18%;
+}
+
+.modals{
+    @include flex-column;
+    position: relative;
+    margin: auto;
+    gap: 0.25rem;
+    background-color: $gray;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    width: 22.5rem;
+    box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.2),
+    -10px -10px 24px 1px rgba(0,0,0,0.2);
+
+    &-item{
+        margin-top: 1rem;
+        width: 50%;
+        position: relative;
+    }
+
+    &-btn{
+        position: absolute;
+        top: 0;
+        right: -37.5%;
+        background-color: transparent;
+        border: none;
+    }
+
+    &-close{
+        cursor: pointer;
+        color: $main-color-dark;
+        font-size: 1.5rem;
+    }
+
+
+
+    &-img{
+        display: block;
+        width: 100%;
+    }
+
+    &-title{
+        font-family: $main-font-bold;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    &-p{
+        padding: 0 2rem 0.5rem 2rem;
+        font-family: $secondary-font;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    &-price{
+        margin-top: 0.25rem;
+        font-family: $secondary-font-bold;
+        font-size: 1.25rem;
+    }
+
+    &-check{
+        margin: 1rem 0 1rem 0;
+        padding: 0.75rem 1.5rem;
+        width: 80%;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: transparent;
+        font-family: $main-font-bold;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        background-color: $main-color;
+        color: $white;
+        -webkit-transition: all 0.15s;
+        transition: all 0.15s;
+
+        &:hover, &:focus{
+            color: $white;
+            background-color: $dark-gray;
+        }
+    }
+}

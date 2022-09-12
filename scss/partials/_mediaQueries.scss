@@ -1,0 +1,435 @@
+@media only screen and (min-width: 2000px) {
+
+    .navigation{
+        padding: 0 35rem;
+    }
+
+    .header-carousel-title{
+        font-size: 7rem;
+    }
+
+    .header-carousel-btn{
+        font-size: 4rem;
+    }
+
+    .about-container{
+        padding: 1.5rem 35rem;
+    }
+
+    .menu-container{
+        padding: 1.5rem 35rem;
+    }
+
+    #cards-container{
+        padding: 2rem 35rem;
+    }
+
+    .modals{
+        width: 30rem;
+    }
+
+    .contact-container{
+        padding: 1.5rem 35rem;
+    }
+
+    .footer{
+        padding: 0 35rem;
+    }
+}
+
+@media only screen and (min-width: 1550px) and (max-width: 2000px){
+
+    .navigation{
+        padding: 0 10rem;
+    }
+
+    .header-carousel-title{
+        font-size: 7rem;
+    }
+
+    .header-carousel-btn{
+        font-size: 4rem;
+    }
+
+    .about-container{
+        padding: 1.5rem 10rem;
+    }
+
+    .menu-container{
+        padding: 1.5rem 10rem;
+    }
+
+    #cards-container{
+        padding: 2rem 10rem;
+    }
+
+    .modals{
+        width: 30rem;
+    }
+
+    .contact-container{
+        padding: 1.5rem 10rem;
+    }
+
+    .footer{
+        padding: 0 10rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .menu-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column-reverse;
+    
+        &-item{
+            @include flex-column;
+            padding: 0.75rem;
+        }
+            
+        &-title{
+            text-align: center;
+        }
+
+        &-p{
+            text-align: center;
+        }
+            
+        &-img{
+            margin-right: 0;
+            width: 45%;
+        }
+    }
+
+    .footer-img{
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .about-container{
+        @include flex-column;
+
+        &-item{
+            margin-bottom: 2.5rem;
+        }
+
+        &-img{
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+
+    .about-p{
+        padding: 0;
+    }
+
+    .contact-slider{
+        height: 20rem;
+    }
+
+    .contact-container{
+        @include flex-column;
+
+        &-item{
+            margin: 2.5rem 0;
+        }
+
+        &-img{
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+
+    .contact{
+        padding-bottom: 0;
+
+        &-p{
+            padding: 0;
+        }
+    }
+
+    .footer{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    html{
+        scroll-padding: 113.453px;
+    }
+
+    .hamburger{
+        display: block;
+        position: relative;
+        z-index: 5;
+    }
+
+    .hamburger.active .hamburger-bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .hamburger-bar:nth-child(1){
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    .hamburger.active .hamburger-bar:nth-child(3){
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+    .navigation-logo{
+        position: relative;
+        width: 80px;
+        z-index: 5;
+    }
+
+    .navigation-menu{
+        position: fixed;
+        z-index: 4;
+        top: -125%;
+        left: 0;
+        @include flex-column;
+        width: 100%;
+        height: 100%;
+        background-color: $main-color;
+        -webkit-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in;
+    }
+
+    .navigation-menu.dark{
+        background-color: $main-color-dark;
+    }
+
+    .navigation-item{
+        margin: 1rem 0;
+        padding-right: 1.75rem;
+    }
+
+    .navigation-link{
+        margin-left: 2rem;
+        padding: 0.25rem;
+        width: 8rem;
+        text-align: center;
+    }
+
+    .navigation-menu.active{
+        top: 0;
+    }
+
+    .navigation-modal{
+        inset: 0;
+        background-color: $main-color;
+        z-index: 3;
+    }
+
+    .header-carousel-title{
+        font-size: 3rem;
+    }
+
+    .header-carousel-btn{
+        font-size: 2rem;
+    }
+
+    .header-carousel-container{
+        margin-top: 110px;
+    }
+
+    .menu-card-img{
+        width: 65%;
+    }
+
+    .cart-item-delete{
+        color: $main-color;
+    }
+
+    .footer{
+        @include flex-column;
+
+        &-p{
+            padding: 1rem 0 0 0 ;
+        }
+
+        &-img{
+            width: 17%;
+        }
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    .navigation{
+        padding: 0 2.5rem;
+    }
+
+    .header-carousel-title{
+        font-size: 2rem;
+        text-shadow: 0.2rem 0.2rem $black;
+    }
+
+    .about-container{
+        padding: 1.5rem 2.5rem;
+    }
+
+    #cards-container{
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: 1fr;
+        padding: 2rem 2.5rem;
+    }
+
+    .menu-card-img{
+        width: 40%;
+    }
+
+    .contact-slider{
+        height: 15rem;
+    }
+
+    .contact-container{
+        padding: 1.5rem 2.5rem;
+    }
+
+    .footer-img{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .about-img{
+        width: 15rem;
+    }
+
+    .menu-img{
+        width: 12.5rem;
+    }
+
+    .contact-img{
+        width: 11rem;
+    }
+
+    .footer-img{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .header-carousel-img{
+        height: 15rem;
+    }
+
+    .menu-title{
+        line-height: 4.5rem;
+    }
+
+    .cart-check{
+        width: 85%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .cart-delete {
+        bottom: 14%;
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    html{
+        scroll-padding: 93.094px;
+    }
+    
+    .navigation-logo{
+        width: 60px;
+    }
+
+    .header-carousel-container{
+        margin-top: 90px;
+    }
+
+    .header-carousel-title{
+        top: 20%;
+    }
+
+    .about-container{
+        padding: 1.5rem;
+
+        &-img{
+            width: 100%;
+        }
+    }
+
+    #cards-container{
+        padding: 2rem 1.5rem;
+    }
+
+    .menu-card-img{
+        width: 70%;
+    }
+
+    .modals{
+        width: 17rem;
+
+        &-check{
+        line-height: 1.6rem;
+        }
+    }
+
+    .cart-item{
+        padding: 0.5rem 0.25rem;
+
+        &-container{
+            width: 95%;
+            top: 13%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        &-img{
+            width: 17.5%;
+        }
+    
+        &-price{
+            font-size: 0.95rem;
+        }
+    }
+
+    .contact-slider{
+        height: 10rem;
+    }
+
+    .contact-container{
+        padding: 1.5rem;
+
+        &-img{
+            width: 100%;
+        }
+    }
+
+    .footer-img{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .header-carousel-title{
+        top: 25%;
+        font-size: 1.5rem;
+        text-shadow: 0.15rem 0.15rem $black;
+    }
+
+    .footer-img{
+        width: 60%;
+    }
+}

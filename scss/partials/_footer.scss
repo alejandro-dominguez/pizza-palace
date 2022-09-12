@@ -1,0 +1,24 @@
+.footer{
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    margin-top: 1rem;
+
+    &-p{
+        text-align: center;
+        color: $white;
+        font-family: $secondary-font;
+    }
+
+    &-img{
+        display: block;
+        width: 8%;
+        padding: 1rem;
+    }
+}
+
+.footer.dark{
+    background-color: $main-color-dark;
+}

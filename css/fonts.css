@@ -1,0 +1,24 @@
+@font-face {
+    font-family: canteenMedium;
+    src: url(../fonts/CanteenBN-Medium.ttf);
+}
+
+@font-face {
+    font-family: canteenLight;
+    src: url(../fonts/CanteenBN-Light.ttf);
+}
+
+@font-face {
+    font-family: canteenBold;
+    src: url(../fonts/CanteenBN-Bold.ttf);
+}
+
+@font-face {
+    font-family: interRegular;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: interBold;
+    src: url(../fonts/Inter-Bold.ttf);
+}
