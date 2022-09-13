@@ -9,7 +9,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  background-color: #e9f1f1;
+  background-color: #d7dddd;
   color: #191919;
   font-family: "canteenMedium", sans-serif;
   overflow-y: visible;
@@ -71,7 +71,9 @@ p {
       transform: scale(1.05); }
   .navigation-menu {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    margin-left: auto;
+    padding-right: 1rem; }
   .navigation-item {
     display: flex;
     justify-content: center;
@@ -368,13 +370,13 @@ p {
     text-align: center;
     padding: 0 2.5rem; }
   .menu-card {
-    color: #fff;
+    color: #e9f1f1;
     background-color: #99b2b5;
     display: flex;
     justify-content: center;
     padding: 0.5rem;
     border: 0.25rem solid #b20f1a;
-    text-shadow: 0.15rem 0.15rem #242929;
+    text-shadow: 0.08rem 0.08rem #242929;
     box-shadow: 0.75rem 0.75rem #b20f1a;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -840,7 +842,7 @@ p {
   .footer {
     margin-top: 0; } }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 970px) {
   html {
     scroll-padding: 113.453px; }
   .hamburger {
@@ -887,6 +889,10 @@ p {
     inset: 0;
     background-color: #d61a28;
     z-index: 3; }
+  .navigation-modes {
+    gap: 1.5rem;
+    margin-left: auto;
+    padding-right: 1.75rem; }
   .header-carousel-title {
     font-size: 3rem; }
   .header-carousel-btn {

@@ -20,12 +20,12 @@
     }
 
     &-card{
-        color: $white;
+        color: $light-gray;
         background-color: $gray;
         @include flex-row;
         padding: 0.5rem;
         border: 0.25rem solid $main-color-dark;
-        text-shadow: 0.15rem 0.15rem $darkest-gray;
+        text-shadow: 0.08rem 0.08rem $darkest-gray;
         box-shadow: 0.75rem 0.75rem $main-color-dark;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;

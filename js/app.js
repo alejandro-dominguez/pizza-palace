@@ -67,12 +67,10 @@ const createCards = (products) => {
 const addToCart = (products) => {
     const btns = document.querySelectorAll(".modals-check")
     btns.forEach(btn => {
-        btn.addEventListener("click", ()=> {
+        btn.addEventListener("click", () => {
         const product = products.find(prod => prod.id === Number(btn.dataset.id))
         product.amount = 1
-        if (cart.hasOwnProperty(product.id)) {
-            product.amount = cart[product.id].amount + 1
-        }
+        cart.hasOwnProperty(product.id) ? product.amount = cart[product.id].amount + 1 : null
         cart[product.id] = {...product}
         refreshCart()
         openCartBtn.classList.add("buy")
@@ -100,10 +98,8 @@ const addToCart = (products) => {
 
 const refreshCart = () => {
     cartItemsContainer.innerHTML = ""
-//    addLocalStorage()
-//    cartToLocalStorage()
 
-    if (Object.keys(cart).length === 0){
+    if (Object.keys(cart).length === 0) {
         cartItemsContainer.innerHTML = `<p class="cart-item-container-p">carrito vacío<br>¡Comienza a comprar!</p>`
         cartTotal.innerText = 0
         openCartBtn.classList.remove("buy")
@@ -142,13 +138,13 @@ const cartControllers = () => {
     cartTotal.innerText = itemsTotal
     buyCartBtn.disabled = false
 
-    deleteCartBtn.addEventListener("click", ()=> {
+    deleteCartBtn.addEventListener("click", () => {
         cart = {}
         refreshCart()
         buyCartBtn.disabled = true
         openCartBtn.classList.remove("buy")
     })
-    buyCartBtn.addEventListener("click", ()=> {
+    buyCartBtn.addEventListener("click", () => {
         cart = {}
         refreshCart()
         cartItemsContainer.innerHTML = `<p class="cart-item-container-p">¡Gracias por tu compra!</p>`
@@ -185,7 +181,7 @@ const cartItemControllers = () => {
     const deleteBtns = document.querySelectorAll(".cart-item-container .cart-item-delete")
 
     addBtns.forEach(btn => {
-        btn.addEventListener("click", ()=>{
+        btn.addEventListener("click", () => {
             const product = cart[btn.dataset.id]
             product.amount ++
             cart[btn.dataset.id] = {...product}
@@ -193,28 +189,21 @@ const cartItemControllers = () => {
         })
     })
     removeBtns.forEach(btn => {
-        btn.addEventListener("click", ()=>{
+        btn.addEventListener("click", () => {
             const product = cart[btn.dataset.id]
             product.amount --
-            if (product.amount === 0) {
-                delete cart[btn.dataset.id]
-                buyCartBtn.disabled = true
-                openCartBtn.classList.remove("buy")
-            } else {
-                cart[btn.dataset.id] = {...product}
-            }
+            product.amount === 0 ? (delete cart[btn.dataset.id], buyCartBtn.disabled = true,
+            openCartBtn.classList.remove("buy")) : cart[btn.dataset.id] = {...product}
             refreshCart()
         })        
     })
     deleteBtns.forEach(btn => {
-        btn.addEventListener("click", ()=>{
+        btn.addEventListener("click", () => {
             const product = cart[btn.dataset.id]
             product.amount = 0
             delete cart[btn.dataset.id]
             buyCartBtn.disabled = true
-            if (cart.length === 0) {
-                openCartBtn.classList.remove("buy")
-            }
+            cart.length === 0 ? openCartBtn.classList.remove("buy") : null
             refreshCart()
         })        
     })

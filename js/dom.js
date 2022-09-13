@@ -100,23 +100,15 @@ setInterval((nextSlide), 6000);
 
 const fadeLeftOnScroll = new IntersectionObserver((entries, fadeLeftOnScroll) => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return
-        } else {
-            entry.target.classList.toggle("appear")
-            fadeLeftOnScroll.unobserve(entry.target)
-        }
+        !entry.isIntersecting ? null : (entry.target.classList.toggle("appear"),
+        fadeLeftOnScroll.unobserve(entry.target))
     })
 }, options);
 
 const fadeRightOnScroll = new IntersectionObserver((entries, fadeRightOnScroll) => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return
-        } else {
-            entry.target.classList.toggle("appear")
-            fadeRightOnScroll.unobserve(entry.target)
-        }
+        !entry.isIntersecting ? null : (entry.target.classList.toggle("appear"),
+        fadeRightOnScroll.unobserve(entry.target))
     })
 }, options);
 
@@ -150,25 +142,18 @@ const lightMode = () => {
 }
 
 const saveMode = () => {
-    if (localStorage.getItem("mode") === ("dark")) {
-        colorModeItems.forEach(item => {
-        item.classList.add("dark")    
-        })
+    localStorage.getItem("mode") === ("dark") ? 
+    (colorModeItems.forEach(item => {
+        item.classList.add("dark")
+    }),
+    navLinks.forEach(link => {
+        link.classList.add("dark")}))
+    :   (colorModeItems.forEach(item => {
+            item.classList.remove("dark")}),
         navLinks.forEach(link => {
-        link.classList.add("dark")  
-        })
-        
-    } else {
-        colorModeItems.forEach(item => {
-        item.classList.remove("dark")    
-        })
-        navLinks.forEach(link => {
-        link.classList.remove("dark")  
-        })
-     }
+            link.classList.remove("dark")}))
 }
 
 darkMode();
 lightMode();
 saveMode();
-
