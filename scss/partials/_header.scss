@@ -37,7 +37,7 @@
     &-link{
         padding: 0.25rem 2rem;
         text-decoration: none;
-        background-color: $white;
+        background-color: $light-gray;
         color: $black;
         border: 0.25rem solid $black;
         box-shadow: 0.4rem 0.4rem $black;
@@ -60,7 +60,7 @@
 
     &-light{
         cursor: pointer;
-        color: $white;
+        color: $light-gray;
         font-size: 1.2rem;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;

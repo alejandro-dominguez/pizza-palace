@@ -20,17 +20,22 @@
     }
 
     &-card{
-        background-color: $card-bg;
+        color: $white;
+        background-color: $gray;
         @include flex-row;
         padding: 0.5rem;
-        border: 0.25rem solid $darker-gray;
+        border: 0.25rem solid $main-color-dark;
+        text-shadow: 0.15rem 0.15rem $darkest-gray;
         box-shadow: 0.75rem 0.75rem $main-color-dark;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
 
         &:hover{
+            color: $black;
+            background-color: $card-bg;
             transform: translateY(-0.225rem);
             border: 0.25rem solid $main-color-dark;
+            text-shadow: 0.08rem 0.08rem $light-gray;
             box-shadow: 0.55rem 0.55rem $secondary-color;
         }
 
