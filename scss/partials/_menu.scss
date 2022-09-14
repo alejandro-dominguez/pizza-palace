@@ -19,6 +19,17 @@
         padding: 0 2.5rem;
     }
 
+    &-error{
+        display: none;
+    
+        &-p{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 3rem;
+        line-height: 2.5rem;
+        }
+    }
+
     &-card{
         color: $light-gray;
         background-color: $gray;

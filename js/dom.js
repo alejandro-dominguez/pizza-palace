@@ -149,11 +149,13 @@ const saveMode = () => {
         item.classList.add("dark")
     }),
     navLinks.forEach(link => {
-        link.classList.add("dark")}))
+        link.classList.add("dark")}),
+        cartBtn.classList.add("dark"))
     :   (colorModeItems.forEach(item => {
             item.classList.remove("dark")}),
         navLinks.forEach(link => {
-            link.classList.remove("dark")}))
+            link.classList.remove("dark")}),
+            cartBtn.classList.remove("dark"))
 }
 
 darkMode();

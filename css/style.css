@@ -241,7 +241,7 @@ p {
   flex-wrap: wrap;
   animation: spin 4s linear infinite; }
   .spinner-container {
-    padding: 2rem 0;
+    padding: 3.5rem 0;
     overflow: hidden;
     display: none; }
   .spinner-p {
@@ -369,6 +369,13 @@ p {
     font-size: 5rem;
     text-align: center;
     padding: 0 2.5rem; }
+  .menu-error {
+    display: none; }
+    .menu-error-p {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      line-height: 2.5rem; }
   .menu-card {
     color: #e9f1f1;
     background-color: #99b2b5;
@@ -951,6 +958,8 @@ p {
     width: 15rem; }
   .menu-img {
     width: 12.5rem; }
+  .menu-error {
+    padding: 0 1.5rem; }
   .contact-img {
     width: 11rem; }
   .footer-img {

@@ -4,6 +4,7 @@ const cartTotal = document.querySelector("#cartTotal");
 const deleteCartBtn = document.querySelector("#delete-cart");
 const buyCartBtn = document.querySelector(".cart-check");
 const loadingSpinner = document.querySelector(".spinner-container");
+const error = document.querySelector(".menu-error");
 let products = [];
 let cart = {};
 
@@ -16,10 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const fetchData = async () => {
     await fetch("https://6313ca7efc9dc45cb4e63edf.mockapi.io/api/v1/products")
     .then((response) => response.json())
-    .catch((error) => {
-        console.error("Hubo un problema al cargar los productos", error)
-        loadingSpinner.style.display = "block"
-    })
     .then((json) => {
         loadingSpinner.style.display = "block"
         setTimeout(() => {
@@ -29,6 +26,16 @@ const fetchData = async () => {
             addToCart(products)
         }, 8000)
     })
+    .catch(() => {dataError})
+}
+
+// error catch //
+
+const dataError = () => {
+    loadingSpinner.style.display = "block"
+    setTimeout(() => {
+        error.style.display = "block"
+    }, 4000)
 }
 
 // generate product cards and modals //
