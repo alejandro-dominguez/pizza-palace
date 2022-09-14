@@ -74,6 +74,7 @@ const addToCart = (products) => {
         cart[product.id] = {...product}
         refreshCart()
         openCartBtn.classList.add("buy")
+        htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("dark"), cartBtn.classList.add("buy")) : null
         setTimeout(() => {
             Swal.fire({
                 customClass: {
@@ -103,6 +104,7 @@ const refreshCart = () => {
         cartItemsContainer.innerHTML = `<p class="cart-item-container-p">carrito vacío<br>¡Comienza a comprar!</p>`
         cartTotal.innerText = 0
         openCartBtn.classList.remove("buy")
+        htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("buy"), cartBtn.classList.add("dark")) : null
         cart = {}
         return
     }
@@ -143,6 +145,7 @@ const cartControllers = () => {
         refreshCart()
         buyCartBtn.disabled = true
         openCartBtn.classList.remove("buy")
+        htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("buy"), cartBtn.classList.add("dark")) : null
     })
     buyCartBtn.addEventListener("click", () => {
         cart = {}
@@ -150,6 +153,7 @@ const cartControllers = () => {
         cartItemsContainer.innerHTML = `<p class="cart-item-container-p">¡Gracias por tu compra!</p>`
         buyCartBtn.disabled = true
         openCartBtn.classList.remove("buy")
+        htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("buy"), cartBtn.classList.add("dark")) : null
         setTimeout(() => {
         Swal.fire({
             customClass: {
@@ -192,8 +196,8 @@ const cartItemControllers = () => {
         btn.addEventListener("click", () => {
             const product = cart[btn.dataset.id]
             product.amount --
-            product.amount === 0 ? (delete cart[btn.dataset.id], buyCartBtn.disabled = true,
-            openCartBtn.classList.remove("buy")) : cart[btn.dataset.id] = {...product}
+            product.amount === 0 ? (delete cart[btn.dataset.id], buyCartBtn.disabled = true)
+            : cart[btn.dataset.id] = {...product}
             refreshCart()
         })        
     })
