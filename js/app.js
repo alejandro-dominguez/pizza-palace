@@ -3,7 +3,6 @@ const cartItemsContainer = document.querySelector("#cart-items-container");
 const cartTotal = document.querySelector("#cartTotal");
 const deleteCartBtn = document.querySelector("#delete-cart");
 const buyCartBtn = document.querySelector(".cart-check");
-const openCartBtn = document.querySelector("#open-cart-btn");
 const loadingSpinner = document.querySelector(".spinner-container");
 let products = [];
 let cart = {};
@@ -73,7 +72,7 @@ const addToCart = (products) => {
         cart.hasOwnProperty(product.id) ? product.amount = cart[product.id].amount + 1 : null
         cart[product.id] = {...product}
         refreshCart()
-        openCartBtn.classList.add("buy")
+        cartBtn.classList.add("buy")
         htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("dark"), cartBtn.classList.add("buy")) : null
         setTimeout(() => {
             Swal.fire({
@@ -103,7 +102,7 @@ const refreshCart = () => {
     if (Object.keys(cart).length === 0) {
         cartItemsContainer.innerHTML = `<p class="cart-item-container-p">carrito vacío<br>¡Comienza a comprar!</p>`
         cartTotal.innerText = 0
-        openCartBtn.classList.remove("buy")
+        cartBtn.classList.remove("buy")
         htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("buy"), cartBtn.classList.add("dark")) : null
         cart = {}
         return
@@ -144,7 +143,7 @@ const cartControllers = () => {
         cart = {}
         refreshCart()
         buyCartBtn.disabled = true
-        openCartBtn.classList.remove("buy")
+        cartBtn.classList.remove("buy")
         htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("buy"), cartBtn.classList.add("dark")) : null
     })
     buyCartBtn.addEventListener("click", () => {
@@ -152,7 +151,7 @@ const cartControllers = () => {
         refreshCart()
         cartItemsContainer.innerHTML = `<p class="cart-item-container-p">¡Gracias por tu compra!</p>`
         buyCartBtn.disabled = true
-        openCartBtn.classList.remove("buy")
+        cartBtn.classList.remove("buy")
         htmlBody.classList.contains("dark") ? (cartBtn.classList.remove("buy"), cartBtn.classList.add("dark")) : null
         setTimeout(() => {
         Swal.fire({
@@ -207,7 +206,7 @@ const cartItemControllers = () => {
             product.amount = 0
             delete cart[btn.dataset.id]
             buyCartBtn.disabled = true
-            cart.length === 0 ? openCartBtn.classList.remove("buy") : null
+            cart.length === 0 ? cartBtn.classList.remove("buy") : null
             refreshCart()
         })        
     })

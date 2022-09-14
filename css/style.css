@@ -485,7 +485,18 @@ p {
       background-color: #69797a; }
 
 .cart-link {
-  background-color: #fff; }
+  padding: 0.25rem 2rem;
+  text-decoration: none;
+  background-color: #fff;
+  color: #191919;
+  border: 0.25rem solid #191919;
+  box-shadow: 0.4rem 0.4rem #191919;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .cart-link:hover, .cart-link:focus {
+    box-shadow: 0.2rem 0.2rem #191919;
+    background-color: #99b2b5;
+    color: #fff; }
 
 .cart-link.buy {
   background-color: #ffe045; }

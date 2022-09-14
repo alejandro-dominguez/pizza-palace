@@ -30,7 +30,7 @@ const cartItemsWrapper = document.querySelector(".cart-item-container");
 const footer = document.querySelector(".footer");
 const navLinks = document.querySelectorAll(".navigation-link");
 const colorModeItems = [htmlBody, aboutImgL, aboutImgS, menuImg, contactImgL, contactImgS, nav, navMenuDark,
-cartBtn, cartContainer, cartCloseBtn, cartTitle, cartDeleteBtn, cartItemsWrapper, footer];
+cartContainer, cartCloseBtn, cartTitle, cartDeleteBtn, cartItemsWrapper, footer];
 
 // responsive menu //
   
@@ -120,11 +120,12 @@ fadeRightOnScroll.observe(fadeRight);
 const darkMode = () => {
     navDarkBtn.addEventListener("click", () => {
         colorModeItems.forEach(item => {
-        item.classList.add("dark")    
+        item.classList.add("dark")
         })
         navLinks.forEach(link => {
         link.classList.add("dark")  
         })
+        cartBtn.classList.contains("buy") ? null : cartBtn.classList.add("dark")
         localStorage.setItem("mode", "dark")
     })
 }
@@ -137,6 +138,7 @@ const lightMode = () => {
         navLinks.forEach(link => {
         link.classList.remove("dark")  
         })
+        cartBtn.classList.remove("dark")
         localStorage.setItem("mode", "light")
     })
 }
