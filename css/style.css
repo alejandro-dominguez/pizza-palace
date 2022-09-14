@@ -83,7 +83,7 @@ p {
   .navigation-link {
     padding: 0.25rem 2rem;
     text-decoration: none;
-    background-color: #e9f1f1;
+    background-color: #fff;
     color: #191919;
     border: 0.25rem solid #191919;
     box-shadow: 0.4rem 0.4rem #191919;
@@ -100,7 +100,7 @@ p {
     gap: 1rem; }
   .navigation-light {
     cursor: pointer;
-    color: #e9f1f1;
+    color: #fff;
     font-size: 1.2rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
@@ -485,7 +485,7 @@ p {
       background-color: #69797a; }
 
 .cart-link {
-  background-color: #e9f1f1; }
+  background-color: #fff; }
 
 .cart-link.buy {
   background-color: #ffe045; }
