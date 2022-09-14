@@ -383,7 +383,7 @@ p {
     justify-content: center;
     padding: 0.5rem;
     border: 0.25rem solid #b20f1a;
-    text-shadow: 0.08rem 0.08rem #242929;
+    text-shadow: 0.08rem 0.08rem #495556;
     box-shadow: 0.75rem 0.75rem #b20f1a;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -392,8 +392,8 @@ p {
       background-color: #bdc5c6;
       transform: translateY(-0.225rem);
       border: 0.25rem solid #b20f1a;
-      text-shadow: 0.08rem 0.08rem #e9f1f1;
-      box-shadow: 0.55rem 0.55rem #e8cc41; }
+      text-shadow: 0.08rem 0.08rem #99b2b5;
+      box-shadow: 0.55rem 0.55rem #b20f1a; }
     .menu-card-item {
       display: flex;
       flex-direction: column;

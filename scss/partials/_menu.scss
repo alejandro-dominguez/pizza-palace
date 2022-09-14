@@ -36,7 +36,7 @@
         @include flex-row;
         padding: 0.5rem;
         border: 0.25rem solid $main-color-dark;
-        text-shadow: 0.08rem 0.08rem $darkest-gray;
+        text-shadow: 0.08rem 0.08rem $darker-gray;
         box-shadow: 0.75rem 0.75rem $main-color-dark;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
@@ -46,8 +46,8 @@
             background-color: $card-bg;
             transform: translateY(-0.225rem);
             border: 0.25rem solid $main-color-dark;
-            text-shadow: 0.08rem 0.08rem $light-gray;
-            box-shadow: 0.55rem 0.55rem $secondary-color;
+            text-shadow: 0.08rem 0.08rem $gray;
+            box-shadow: 0.55rem 0.55rem $main-color-dark;
         }
 
         &-item{
