@@ -1,5 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navigation-menu");
+const buyCartBtn = document.querySelector(".cart-check");
 const carousel = document.querySelector(".header-carousel");
 const btnRight = document.querySelector(".header-carousel-btn-right");
 const btnLeft = document.querySelector(".header-carousel-btn-left");
@@ -45,6 +46,11 @@ document.querySelectorAll(".navigation-link").forEach(e => e.addEventListener("c
 }));
 
 document.querySelector(".navigation-logo").addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+});
+
+buyCartBtn.addEventListener("click", () => {
     hamburger.classList.remove("active")
     navMenu.classList.remove("active")
 });

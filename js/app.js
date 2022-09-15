@@ -2,7 +2,6 @@ const cardsContainer = document.querySelector("#cards-container");
 const cartItemsContainer = document.querySelector("#cart-items-container");
 const cartTotal = document.querySelector("#cartTotal");
 const deleteCartBtn = document.querySelector("#delete-cart");
-const buyCartBtn = document.querySelector(".cart-check");
 const loadingSpinner = document.querySelector(".spinner-container");
 const error = document.querySelector(".menu-error");
 let products = [];
