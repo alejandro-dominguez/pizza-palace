@@ -751,14 +751,22 @@ p {
   align-items: center;
   padding: 0 5rem;
   margin-top: 1rem; }
-  .footer-p {
-    text-align: center;
-    color: #fff;
-    font-family: "interRegular", sans-serif; }
   .footer-img {
     display: block;
     width: 8%;
     padding: 1rem 0; }
+  .footer-copy {
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center; }
+    .footer-copy-p {
+      text-align: center;
+      color: #fff;
+      font-family: "interRegular", sans-serif; }
+    .footer-copy-img {
+      display: block;
+      width: 15%; }
 
 .footer.dark {
   background-color: #b20f1a; }
@@ -932,8 +940,15 @@ p {
     align-items: center;
     justify-content: center;
     flex-flow: column-reverse; }
-    .footer-p {
+    .footer-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
       padding-bottom: 1rem; }
+      .footer-copy-img {
+        width: 20%;
+        padding-bottom: 1rem; }
     .footer-img {
       width: 17%; } }
 
@@ -1024,7 +1039,9 @@ p {
     .contact-container-img {
       width: 100%; }
   .footer-img {
-    width: 45%; } }
+    width: 45%; }
+  .footer-copy-img {
+    width: 35%; } }
 
 @media only screen and (max-width: 350px) {
   .header-carousel-title {

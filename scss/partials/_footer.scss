@@ -6,16 +6,29 @@
     padding: 0 5rem;
     margin-top: 1rem;
 
-    &-p{
-        text-align: center;
-        color: $white;
-        font-family: $secondary-font;
-    }
-
     &-img{
         display: block;
         width: 8%;
         padding: 1rem 0;
+    }
+
+    &-copy{
+        display: flex;
+        gap: 1rem;
+        justify-content: start;
+        align-items: center;
+
+        &-p{
+            text-align: center;
+            color: $white;
+            font-family: $secondary-font;
+        }
+
+        &-img{
+            display: block;
+            width: 15%;
+
+        }
     }
 }
 

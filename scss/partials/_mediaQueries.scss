@@ -269,8 +269,17 @@
         justify-content: center;
         flex-flow: column-reverse;
 
-        &-p{
+        &-copy{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
             padding-bottom: 1rem;
+
+            &-img{
+                width: 20%;
+                padding-bottom: 1rem;
+            }
         }
 
         &-img{
@@ -439,6 +448,10 @@
 
     .footer-img{
         width: 45%;
+    }
+
+    .footer-copy-img{
+        width: 35%;
     }
 }
 
