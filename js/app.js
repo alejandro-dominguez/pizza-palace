@@ -3,7 +3,7 @@ const cartItemsContainer = document.querySelector("#cart-items-container");
 const cartTotal = document.querySelector("#cartTotal");
 const deleteCartBtn = document.querySelector("#delete-cart");
 const loadingSpinner = document.querySelector(".spinner-container");
-const error = document.querySelector(".menu-error");
+const errorText = document.querySelector(".menu-error");
 let products = [];
 let cart = {};
 
@@ -25,7 +25,7 @@ const fetchData = async () => {
             addToCart(products)
         }, 8000)
     })
-    .catch(() => {dataError})
+    .catch((error) => dataError())
 }
 
 // error catch //
@@ -33,7 +33,10 @@ const fetchData = async () => {
 const dataError = () => {
     loadingSpinner.style.display = "block"
     setTimeout(() => {
-        error.style.display = "block"
+    loadingSpinner.style.display = "none"
+    }, 4000)
+    setTimeout(() => {
+    errorText.style.display = "block"
     }, 4000)
 }
 
