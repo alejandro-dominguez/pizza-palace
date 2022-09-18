@@ -9,28 +9,27 @@ let cart = {};
 
 // data fecht //
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetchData()
-});
-
 const fetchData = async () => {
     await fetch("https://6313ca7efc9dc45cb4e63edf.mockapi.io/api/v1/products")
     .then((response) => response.json())
-    .then((json) => {
+    .then((data) => {
         loadingSpinner.style.display = "block"
         setTimeout(() => {
             loadingSpinner.style.display = "none"
-            let products = json
+            let products = data
             createCards(products)
             addToCart(products)
         }, 8000)
     })
-    .catch((error) => dataError())
+    .catch((error) => dataError(error))
 }
+
+fetchData();
 
 // error catch //
 
-const dataError = () => {
+const dataError = (error) => {
+    console.error("Ha ocurrido un problema al cargar los datos del servidor", error)
     loadingSpinner.style.display = "block"
     setTimeout(() => {
     loadingSpinner.style.display = "none"
