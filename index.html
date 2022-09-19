@@ -18,7 +18,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
     <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script defer src="./js/dom.js"></script>
+    <script defer src="./js/domManipulation.js"></script>
     <script defer src="./js/app.js"></script>
 </head>
 <body>
@@ -118,14 +118,14 @@
     <img class="menu-img" id="menu" loading="lazy" src="./images/pizza-img.svg" alt="pizza">
     <h2 class="menu-title">Nuestras pizzas</h2>
         
-    <!-- cards and modals -->
+    <!-- loading spinner and error message -->
 
     <div class="spinner-container">
         <div class="spinner">
-            <img class="pizza-part pizza-part-1" src="./images/pizza-spinner.png" loading="lazy">
-            <img class="pizza-part pizza-part-2" src="./images/pizza-spinner.png" loading="lazy">
-            <img class="pizza-part pizza-part-3" src="./images/pizza-spinner.png" loading="lazy">
-            <img class="pizza-part pizza-part-4" src="./images/pizza-spinner.png" loading="lazy">
+            <img class="pizza-part pizza-part-1" src="./images/pizza-spinner.png" loading="lazy" alt="loading spinner">
+            <img class="pizza-part pizza-part-2" src="./images/pizza-spinner.png" loading="lazy" alt="loading spinner">
+            <img class="pizza-part pizza-part-3" src="./images/pizza-spinner.png" loading="lazy" alt="loading spinner">
+            <img class="pizza-part pizza-part-4" src="./images/pizza-spinner.png" loading="lazy" alt="loading spinner">
         </div>
         <p class="spinner-p">Cargando<br>productos...</p>
     </div>
@@ -134,6 +134,9 @@
             <br>por favor espera unos momentos<br>o intenta refrescar la pantalla.
         </p>
     </div>
+
+    <!-- cards and modals -->
+
     <div class="container-fluid">
         <div class="row" id="cards-container"></div>
     </div>
@@ -260,8 +263,10 @@
 
 <footer class="footer">
     <div class="footer-copy">
-        <p class="footer-copy-p">&#9400;&nbsp;Alejandro Dominguez 2022</p>
-        <img class="footer-copy-img" src="./images/logo-A.D.svg" alt="logo Alejandro Dominguez">
+        <p class="footer-copy-p">&#9400;&nbsp;2022 Alejandro Dominguez</p>
+        <a href="https://github.com/alejandro-dominguez" target="_blank">
+            <img class="footer-copy-img" src="./images/logo-A.D.svg" alt="logo Alejandro Dominguez">
+        </a>
     </div>
     <img class="footer-img" src="./images/logo-nav.svg" alt="logo pizza palace">
 </footer>

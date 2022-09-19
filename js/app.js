@@ -4,13 +4,14 @@ const cartTotal = document.querySelector("#cartTotal");
 const deleteCartBtn = document.querySelector("#delete-cart");
 const loadingSpinner = document.querySelector(".spinner-container");
 const errorText = document.querySelector(".menu-error");
+const URL = "https://6313ca7efc9dc45cb4e63edf.mockapi.io/api/v1/products";
 let products = [];
 let cart = {};
 
 // data fecht //
 
 const fetchData = async () => {
-    await fetch("https://6313ca7efc9dc45cb4e63edf.mockapi.io/api/v1/products")
+    await fetch(URL)
     .then((response) => response.json())
     .then((data) => {
         loadingSpinner.style.display = "block"
@@ -39,7 +40,7 @@ const dataError = (error) => {
     }, 4000)
 }
 
-// generate product cards and modals //
+// create product cards and modals //
 
 const createCards = (products) => {
     const cardsTemplate = document.querySelector("#cards-template").content
