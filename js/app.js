@@ -14,13 +14,9 @@ const fetchData = async () => {
     await fetch(URL)
     .then((response) => response.json())
     .then((data) => {
-        loadingSpinner.style.display = "block"
-        setTimeout(() => {
-            loadingSpinner.style.display = "none"
-            let products = data
-            createCards(products)
-            addToCart(products)
-        }, 8000)
+        let products = data
+        createCards(products)
+        addToCart(products)
     })
     .catch((error) => dataError(error))
 }
