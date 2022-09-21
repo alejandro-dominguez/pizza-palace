@@ -1,11 +1,11 @@
 # pizza-palace
-Pizza palace es un proyecto de un carrito de compras para un restaurante de pizzas
+Pizza palace es un proyecto de un carrito de compras para un restaurante de pizzas.
 
 # Tecnologías
 En este proyecto he utilizado Javascript, HTML, CSS y SASS.
 
 # Frameworks y librerías
-Bootstrap y Sweet Alert
+Bootstrap y Sweet Alert.
 
 # Conceptos trabajados
 para llevar a cabo la interfaz de este proyecto he tenido que hacer uso de diferentes capacidades que brinda el lenguaje Javascript.
