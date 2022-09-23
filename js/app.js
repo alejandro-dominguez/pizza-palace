@@ -10,6 +10,10 @@ let cart = {};
 
 // data fecht //
 
+document.addEventListener("DOMContentLoaded", () => {
+    fetchData()
+});
+
 const fetchData = async () => {
     await fetch(URL)
     .then((response) => response.json())
@@ -20,8 +24,6 @@ const fetchData = async () => {
     })
     .catch((error) => dataError(error))
 }
-
-fetchData();
 
 // error catch //
 
