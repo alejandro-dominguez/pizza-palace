@@ -27,7 +27,12 @@
         &-img{
             display: block;
             width: 15%;
-
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+    
+            &:hover, &:focus{
+                transform: scale(1.05);
+            }
         }
     }
 }

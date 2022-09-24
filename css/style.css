@@ -766,7 +766,11 @@ p {
       font-family: "interRegular", sans-serif; }
     .footer-copy-img {
       display: block;
-      width: 15%; }
+      width: 15%;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .footer-copy-img:hover, .footer-copy-img:focus {
+        transform: scale(1.05); }
 
 .footer.dark {
   background-color: #b20f1a; }
@@ -946,6 +950,8 @@ p {
       justify-content: start;
       align-items: center;
       padding-bottom: 1rem; }
+      .footer-copy-link {
+        display: contents; }
       .footer-copy-img {
         width: 20%;
         padding-bottom: 1rem; }

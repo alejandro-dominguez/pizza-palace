@@ -276,6 +276,10 @@
             align-items: center;
             padding-bottom: 1rem;
 
+            &-link{
+                display: contents;
+            }
+
             &-img{
                 width: 20%;
                 padding-bottom: 1rem;
