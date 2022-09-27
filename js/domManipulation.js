@@ -178,6 +178,7 @@ fadeRightOnScroll.observe(fadeRight);
                 stopKeydownPropagation: true
             })
     }, 1250))
+
     localStorage.getItem("mode") === ("dark") ? 
     (colorModeItems.forEach(item => {
         item.classList.add("dark")
@@ -193,4 +194,8 @@ fadeRightOnScroll.observe(fadeRight);
         link.classList.remove("dark")
     }),
     cartBtn.classList.remove("dark"))
+
+    localStorage.getItem("mode") === ("dark") && localStorage.getItem("cart") !== "{}" ?
+    (cartBtn.classList.remove("dark"),
+    cartBtn.classList.add("buy")) : null
 })();
