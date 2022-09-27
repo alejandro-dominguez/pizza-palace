@@ -160,25 +160,24 @@ fadeRightOnScroll.observe(fadeRight);
 })();
 
 (saveMode = () => {
-    localStorage.getItem("cart") ?
-    (cartBtn.classList.add("buy"),
-    setTimeout(() => {
-        Swal.fire({
-            customClass: {
-            title: "title-swal-storage"},
-            width: "fit-content",
-            position: "top",
-            background: "#e8cc41",
-            color: "#191919",
-            toast: true,
-            title: "Aún tienes productos en el carrito",
-            showConfirmButton: false,
-            timer: 3000,
-            allowEscapeKey: false,
-            stopKeydownPropagation: true
+    localStorage.getItem("cart") === "{}" || !localStorage.getItem("cart") ? null
+    : (cartBtn.classList.add("buy"),
+        setTimeout(() => {
+            Swal.fire({
+                customClass: {
+                title: "title-swal-storage"},
+                width: "fit-content",
+                position: "top",
+                background: "#e8cc41",
+                color: "#191919",
+                toast: true,
+                title: "Quedaron productos en el carrito",
+                showConfirmButton: false,
+                timer: 3000,
+                allowEscapeKey: false,
+                stopKeydownPropagation: true
             })
-        }, 1250))
-    : null
+    }, 1250))
     localStorage.getItem("mode") === ("dark") ? 
     (colorModeItems.forEach(item => {
         item.classList.add("dark")
