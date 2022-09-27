@@ -38,21 +38,31 @@ cartContainer, cartCloseBtn, cartTitle, cartDeleteBtn, cartItemsWrapper, footer]
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active")
     navMenu.classList.toggle("active")
+    htmlBody.classList.toggle("active")
 });
 
 document.querySelectorAll(".navigation-link").forEach(e => e.addEventListener("click", () => {
     hamburger.classList.remove("active")
     navMenu.classList.remove("active")
+    htmlBody.classList.remove("active")
 }));
 
 document.querySelector(".navigation-logo").addEventListener("click", () => {
     hamburger.classList.remove("active")
     navMenu.classList.remove("active")
+    htmlBody.classList.remove("active")
 });
 
 buyCartBtn.addEventListener("click", () => {
     hamburger.classList.remove("active")
     navMenu.classList.remove("active")
+    htmlBody.classList.remove("active")
+});
+
+cartCloseBtn.addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+    htmlBody.classList.remove("active")
 });
 
 // carousel //
@@ -123,7 +133,7 @@ fadeRightOnScroll.observe(fadeRight);
 
 // color mode //
 
-const darkMode = () => {
+(darkMode = () => {
     navDarkBtn.addEventListener("click", () => {
         colorModeItems.forEach(item => {
         item.classList.add("dark")
@@ -134,9 +144,9 @@ const darkMode = () => {
         cartBtn.classList.contains("buy") ? null : cartBtn.classList.add("dark")
         localStorage.setItem("mode", "dark")
     })
-}
+})();
 
-const lightMode = () => {
+(lightMode = () => {
     navLightBtn.addEventListener("click", () => {
         colorModeItems.forEach(item => {
         item.classList.remove("dark")    
@@ -147,23 +157,41 @@ const lightMode = () => {
         cartBtn.classList.remove("dark")
         localStorage.setItem("mode", "light")
     })
-}
+})();
 
-const saveMode = () => {
+(saveMode = () => {
+    localStorage.getItem("cart") ?
+    (cartBtn.classList.add("buy"),
+    setTimeout(() => {
+        Swal.fire({
+            customClass: {
+            title: "title-swal-storage"},
+            width: "fit-content",
+            position: "top",
+            background: "#e8cc41",
+            color: "#191919",
+            toast: true,
+            title: "Aún tienes productos en el carrito",
+            showConfirmButton: false,
+            timer: 3000,
+            allowEscapeKey: false,
+            stopKeydownPropagation: true
+            })
+        }, 1250))
+    : null
     localStorage.getItem("mode") === ("dark") ? 
     (colorModeItems.forEach(item => {
         item.classList.add("dark")
     }),
     navLinks.forEach(link => {
-        link.classList.add("dark")}),
-        cartBtn.classList.add("dark"))
-    :   (colorModeItems.forEach(item => {
-            item.classList.remove("dark")}),
-        navLinks.forEach(link => {
-            link.classList.remove("dark")}),
-            cartBtn.classList.remove("dark"))
-}
-
-darkMode();
-lightMode();
-saveMode();
+        link.classList.add("dark")
+    }),
+    cartBtn.classList.add("dark"))
+    : (colorModeItems.forEach(item => {
+        item.classList.remove("dark")
+    }),
+    navLinks.forEach(link => {
+        link.classList.remove("dark")
+    }),
+    cartBtn.classList.remove("dark"))
+})();

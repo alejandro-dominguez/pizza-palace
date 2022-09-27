@@ -18,6 +18,10 @@ body{
     overflow-x: hidden;
 }
 
+body.active{
+    overflow-y: hidden;
+}
+
 body.dark{
     background-color: $darkest-gray;
     color: $white;
