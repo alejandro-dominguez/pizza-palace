@@ -12,6 +12,7 @@ body {
   background-color: #d7dddd;
   color: #191919;
   font-family: "canteenMedium", sans-serif;
+  font-display: swap;
   overflow-y: visible;
   overflow-x: hidden; }
 
@@ -157,6 +158,7 @@ p {
     margin: 0 1.5rem;
     font-family: "canteenBold", sans-serif;
     font-size: 4rem;
+    font-display: swap;
     text-align: center;
     color: #fff;
     text-shadow: 0.25rem 0.25rem #191919;
@@ -219,11 +221,13 @@ p {
     padding-left: 2.5rem;
     font-size: 1rem;
     text-align: left;
-    font-family: "interRegular", sans-serif; }
+    font-family: "interRegular", sans-serif;
+    font-display: swap; }
 
 .title {
   font-family: "canteenBold", sans-serif;
   font-size: 5rem;
+  font-display: swap;
   text-align: center; }
 
 .about-img.dark {
@@ -372,6 +376,7 @@ p {
   .menu-title {
     font-family: "canteenBold", sans-serif;
     font-size: 5rem;
+    font-display: swap;
     text-align: center;
     padding: 0 2.5rem; }
   .menu-error {
@@ -408,10 +413,12 @@ p {
     .menu-card-title {
       font-family: "canteenBold", sans-serif;
       font-size: 3rem;
+      font-display: swap;
       text-align: left; }
     .menu-card-p {
       font-family: "interRegular", sans-serif;
       font-size: 1rem;
+      font-display: swap;
       text-align: left;
       padding-bottom: 0.5rem; }
     .menu-card-img {
@@ -467,16 +474,19 @@ p {
   .modals-title {
     font-family: "canteenBold", sans-serif;
     font-size: 3rem;
+    font-display: swap;
     text-align: center; }
   .modals-p {
     padding: 0 2rem 0.5rem 2rem;
     font-family: "interRegular", sans-serif;
+    font-display: swap;
     font-size: 1rem;
     text-align: center; }
   .modals-price {
     margin-top: 0.25rem;
     font-family: "interBold", sans-serif;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    font-display: swap; }
   .modals-check {
     margin: 1rem 0 1rem 0;
     padding: 0.75rem 1.5rem;
@@ -486,6 +496,7 @@ p {
     background-color: transparent;
     font-family: "canteenBold", sans-serif;
     font-size: 1.5rem;
+    font-display: swap;
     letter-spacing: 0.1rem;
     text-align: center;
     background-color: #d61a28;
@@ -532,6 +543,7 @@ p {
   left: 8%;
   font-family: "canteenBold", sans-serif;
   font-size: 2.75rem;
+  font-display: swap;
   text-shadow: 0.2rem 0.2rem #495556;
   letter-spacing: 0.1rem; }
 
@@ -544,10 +556,12 @@ p {
   border-bottom: 3px solid #ffe045; }
   .cart-total-p {
     font-family: "interBold", sans-serif;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    font-display: swap; }
   .cart-total-price {
     font-family: "interRegular", sans-serif;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    font-display: swap; }
 
 .cart-check {
   position: absolute;
@@ -560,6 +574,7 @@ p {
   background-color: transparent;
   font-family: "canteenBold", sans-serif;
   font-size: 1.25rem;
+  font-display: swap;
   letter-spacing: 0.1rem;
   background-color: #d61a28;
   color: #fff;
@@ -601,6 +616,7 @@ p {
       margin-top: 1rem;
       font-family: "interRegular", sans-serif;
       font-size: 1.25rem;
+      font-display: swap;
       text-align: center;
       line-height: 1.75rem; }
   .cart-item-img {
@@ -609,6 +625,7 @@ p {
   .cart-item-title {
     font-family: "canteenBold", sans-serif;
     font-size: 1.5rem;
+    font-display: swap;
     padding: 0 0.2rem;
     width: min-content; }
   .cart-item-controllers {
@@ -623,7 +640,8 @@ p {
       color: #d61a28; }
   .cart-item-amount {
     font-family: "interRegular", sans-serif;
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-display: swap; }
   .cart-item-minus {
     margin-top: 0.175rem;
     cursor: pointer;
@@ -637,7 +655,8 @@ p {
     align-items: center; }
   .cart-item-price {
     font-family: "interBold", sans-serif;
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-display: swap; }
   .cart-item-delete {
     font-size: 1rem;
     cursor: pointer;
@@ -650,6 +669,7 @@ p {
 .title-swal {
   text-align: center !important;
   font-family: "canteenLight", sans-serif;
+  font-display: swap;
   line-height: 2.5rem;
   padding: 0.25rem 3rem 1.5rem 3rem;
   letter-spacing: 0.075rem; }
@@ -658,11 +678,13 @@ p {
     text-align: center !important;
     font-family: "canteenMedium", sans-serif;
     font-size: 0.9rem !important;
+    font-display: swap;
     letter-spacing: 0.1rem; }
   .title-swal-storage {
     text-align: center !important;
     font-family: "canteenMedium", sans-serif;
     font-size: 1rem !important;
+    font-display: swap;
     letter-spacing: 0.1rem; }
 
 .cart-link.dark {
@@ -713,7 +735,8 @@ p {
     padding-right: 2.5rem;
     font-size: 1rem;
     text-align: left;
-    font-family: "interRegular", sans-serif; }
+    font-family: "interRegular", sans-serif;
+    font-display: swap; }
   .contact-container {
     display: flex;
     padding: 1.5rem 5rem;
@@ -777,7 +800,8 @@ p {
     .footer-copy-p {
       text-align: center;
       color: #fff;
-      font-family: "interRegular", sans-serif; }
+      font-family: "interRegular", sans-serif;
+      font-display: swap; }
     .footer-copy-img {
       display: block;
       width: 15%;

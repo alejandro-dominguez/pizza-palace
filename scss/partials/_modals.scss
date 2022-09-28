@@ -53,12 +53,14 @@
     &-title{
         font-family: $main-font-bold;
         font-size: 3rem;
+        font-display: swap;
         text-align: center;
     }
 
     &-p{
         padding: 0 2rem 0.5rem 2rem;
         font-family: $secondary-font;
+        font-display: swap;
         font-size: 1rem;
         text-align: center;
     }
@@ -67,6 +69,7 @@
         margin-top: 0.25rem;
         font-family: $secondary-font-bold;
         font-size: 1.25rem;
+        font-display: swap;
     }
 
     &-check{
@@ -78,6 +81,7 @@
         background-color: transparent;
         font-family: $main-font-bold;
         font-size: 1.5rem;
+        font-display: swap;
         letter-spacing: 0.1rem;
         text-align: center;
         background-color: $main-color;
