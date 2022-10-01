@@ -40,7 +40,6 @@
     left: 8%;
     font-family: $main-font-bold;
     font-size: 2.75rem;
-    font-display: swap;
     text-shadow: 0.2rem 0.2rem $darker-gray;
     letter-spacing: 0.1rem;
 }
@@ -56,13 +55,11 @@
     &-p{
         font-family: $secondary-font-bold;
         font-size: 1.25rem;
-        font-display: swap;
     }
 
     &-price{
         font-family: $secondary-font;
         font-size: 1.2rem;
-        font-display: swap;
     }
 }
 
@@ -77,7 +74,6 @@
     background-color: transparent;
     font-family: $main-font-bold;
     font-size: 1.25rem;
-    font-display: swap;
     letter-spacing: 0.1rem;
     background-color: $main-color;
     color: $white;
@@ -127,7 +123,6 @@
             margin-top: 1rem;
             font-family: $secondary-font;
             font-size: 1.25rem;
-            font-display: swap;
             text-align: center;
             line-height: 1.75rem;
         }
@@ -141,7 +136,6 @@
     &-title{
         font-family: $main-font-bold;
         font-size: 1.5rem;
-        font-display: swap;
         padding: 0 0.2rem;
         width: min-content;
     }
@@ -166,7 +160,6 @@
     &-amount{
         font-family: $secondary-font;
         font-size: 1rem;
-        font-display: swap;
     }
 
     
@@ -190,7 +183,6 @@
     &-price{
         font-family: $secondary-font-bold;
         font-size: 1rem;
-        font-display: swap;
     }
 
     &-delete{
@@ -209,7 +201,6 @@
 .title-swal{
     text-align: center!important;
     font-family: $main-font-light;
-    font-display: swap;
     line-height: 2.5rem;
     padding: 0.25rem 3rem 1.5rem 3rem;
     letter-spacing: 0.075rem;
@@ -219,7 +210,6 @@
         text-align: center!important;
         font-family: $main-font;
         font-size: 0.9rem!important;
-        font-display: swap;
         letter-spacing: 0.1rem;
     }
 
@@ -227,7 +217,6 @@
         text-align: center!important;
         font-family: $main-font;
         font-size: 1rem!important;
-        font-display: swap;
         letter-spacing: 0.1rem;
     }
 }
