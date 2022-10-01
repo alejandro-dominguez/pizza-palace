@@ -1,4 +1,4 @@
-# pizza-palace
+# Pizza palace
 Pizza palace es un proyecto de un simulador de carrito de compras para un restaurante de pizzas.
 
 # Tecnologías
