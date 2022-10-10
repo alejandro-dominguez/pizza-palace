@@ -1,5 +1,5 @@
 # Pizza Palace
-Pizza palace es un proyecto de un simulador de carrito de compras para un restaurante de pizzas.
+Pizza Palace es un proyecto de un simulador de carrito de compras para un restaurante de pizzas.
 
 # Tecnologías
 En este proyecto he utilizado Java Script, HTML, CSS, SASS y JSON.
