@@ -1,0 +1,82 @@
+[
+  {
+   "id": 1,
+   "name": "Muzza",
+   "description": "Pizza tamaño familiar de queso muzzarella.",
+   "price": 1350,
+   "img": "./images/pizza-1.png",
+   "alt": "pizza muzzarella"
+  },
+  {
+   "id": 2,
+   "name": "Fugazza",
+   "description": "Pizza tamaño familiar con base de cebolla, queso muzzarella y cebolla.",
+   "price": 1450,
+   "img": "./images/pizza-2.png",
+   "alt": "pizza fugazzetta"
+  },
+  {
+   "id": 3,
+   "name": "Calabra",
+   "description": "Pizza tamaño familiar con rodajas de salame.",
+   "price": 1730,
+   "img": "./images/pizza-3.png",
+   "alt": "pizza calabresa"
+  },
+  {
+   "id": 4,
+   "name": "Veggie",
+   "description": "Pizza tamaño familiar con pimientos, champiñones y hojas verdes.",
+   "price": 1500,
+   "img": "./images/pizza-4.png",
+   "alt": "pizza vegetariana"
+  },
+  {
+   "id": 5,
+   "name": "Champis",
+   "description": "Pizza tamaño familiar con champiñones y aceitunas negras.",
+   "price": 1400,
+   "img": "./images/pizza-5.png",
+   "alt": "pizza de champiñones"
+  },
+  {
+   "id": 6,
+   "name": "Tomato",
+   "description": "Pizza tamaño familiar con rodajas de tomate y salame.",
+   "price": 1800,
+   "img": "./images/pizza-6.png",
+   "alt": "pizza de tomates con rodajas de salame"
+  },
+  {
+   "id": 7,
+   "name": "Fresh",
+   "description": "Pizza tamaño familiar con champiñones, aceitunas negras, jamón cocido, hierbas y rodajas de tomate.",
+   "price": 1800,
+   "img": "./images/pizza-7.png",
+   "alt": "pizza mediterránea"
+  },
+  {
+   "id": 8,
+   "name": "Tinos",
+   "description": "Pizza tamaño familiar con langostinos y hojas de rúcula.",
+   "price": 1750,
+   "img": "./images/pizza-8.png",
+   "alt": "pizza de langostinos"
+  },
+  {
+   "id": 9,
+   "name": "Bianca",
+   "description": "Pizza tamaño familiar con salsa blanca, champiñones y cebolla.",
+   "price": 1550,
+   "img": "./images/pizza-9.png",
+   "alt": "pizza con salsa blanca, champiñones y cebolla"
+  },
+  {
+   "id": 10,
+   "name": "Chiles",
+   "description": "Pizza tamaño familiar con chiles asados, champiñones, pimientos, hierbas y rodajas de salame.",
+   "price": 1450,
+   "img": "./images/pizza-10.png",
+   "alt": "pizza con chiles"
+  }
+ ]
