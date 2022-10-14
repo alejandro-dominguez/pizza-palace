@@ -1,5 +1,5 @@
 # Pizza Palace
-Pizza palace es un proyecto de un simulador de carrito de compras para un restaurante de pizzas.
+Pizza Palace es un proyecto de un simulador de carrito de compras para un restaurante de pizzas.
 
 # Tecnologías
 En este proyecto he utilizado Java Script, HTML, CSS, SASS y JSON.
@@ -9,7 +9,7 @@ Bootstrap y Sweet Alert.
 
 # Conceptos trabajados
 Para llevar a cabo la interfaz de este proyecto he utilizado diferentes capacidades que brinda el lenguaje Java Script.
-Algunas de las habilidades que he adquirido son:
+Algunas de las habilidades que he trabajado son:
 - Recuperar datos de una API utilizando fetch para generar el contenido de la página y las interacciones.
 - Manejar objetos, arrays y variables utilizando métodos, funciones, funciones flecha, asíncronas y autoinvocadas.
 - Guardar el contenido del carrito en localStorage, sincronizándolo con la interfaz del mismo carrito. 
